@@ -68,12 +68,3 @@ Returns `301 Moved Permanently` with a `Location` header.
 mvn test
 ```
 
-## Design choices to explain in review
-
-- Short codes for auto-generated URLs are produced by base62-encoding the database ID, which prevents collisions as long as the ID is unique.
-- The same long URL is treated as idempotent: the first generated code is returned on later requests.
-- Custom aliases are only allowed when they do not already belong to a different URL.
-
-## Suggested git history
-
-See `COMMIT_PLAN.md` for a clean commit-by-commit breakdown.
