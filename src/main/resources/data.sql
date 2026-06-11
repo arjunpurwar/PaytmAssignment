@@ -1,0 +1,1 @@
+-- Intentionally empty. Keeping this file so H2 does not auto-load demo data.
